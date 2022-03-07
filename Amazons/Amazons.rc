@@ -1,0 +1,529 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Amazons.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+
+IDR_AMAZONTYPE          ICON                    "res\\AmazonsDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_BLACK               BITMAP                  "res\\Black.bmp"
+
+IDB_RED                 BITMAP                  "res\\Red.bmp"
+
+IDB_SELECT              BITMAP                  "res\\select.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 21, 17
+BEGIN
+    BUTTON      ID_GAME_START
+    BUTTON      ID_GAMESUSPEND
+    SEPARATOR
+    BUTTON      ID_BACKWARD_TO_START
+    BUTTON      ID_FORWARD_TO_END
+    BUTTON      ID_BACKWARD_TWO
+    BUTTON      ID_FORWARD_TWO
+    BUTTON      ID_BACKWARD_ONE
+    BUTTON      ID_FORWARD_ONE
+    SEPARATOR
+    BUTTON      ID_SETTINGS
+    BUTTON      ID_NEW_GAME
+    BUTTON      ID_MARK
+    BUTTON      ID_SHOW_HISTORY_DLG
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 北信科亚马逊II(&A)...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 266, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 北信科亚马逊II"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "北信科亚马逊II",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "薄健博(ChiliJ)",IDC_STATIC,39,25,130,8
+    DEFPUSHBUTTON   "OK",IDOK,192,17,50,14,WS_GROUP
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 225, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏设置"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    LTEXT           "黑方阵营",IDC_STATIC,56,19,33,8
+    LTEXT           "红方阵营",IDC_STATIC,59,77,33,8
+    CONTROL         "执黑",IDC_RADIO_P1_BLACK,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,133,19,32,10
+    CONTROL         "执红",IDC_RADIO_P1_RED,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,173,19,32,10
+    CONTROL         "先手",IDC_RADIO_P1_FIRST,"Button",BS_AUTORADIOBUTTON | WS_GROUP,133,45,32,10
+    CONTROL         "后手",IDC_RADIO_P1_SECOND,"Button",BS_AUTORADIOBUTTON,173,46,32,10
+    CONTROL         "执黑",IDC_RADIO_P2_BLACK,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,135,73,32,10
+    CONTROL         "执红",IDC_RADIO_P2_RED,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,173,73,32,10
+    CONTROL         "先手",IDC_RADIO_P2_FIRST,"Button",BS_AUTORADIOBUTTON | WS_GROUP,135,100,32,10
+    CONTROL         "后手",IDC_RADIO_P2_SECOND,"Button",BS_AUTORADIOBUTTON,173,100,32,10
+    DEFPUSHBUTTON   "重新开始",IDOK,132,121,40,14
+    PUSHBUTTON      "取消",IDCANCEL,173,121,40,14
+    GROUPBOX        "",IDC_STATIC,125,12,84,22
+    GROUPBOX        "",IDC_STATIC,127,66,84,22
+    GROUPBOX        "",IDC_STATIC,127,37,84,22
+    GROUPBOX        "",IDC_STATIC,127,94,84,22
+    COMBOBOX        IDC_COMBO_PLAYER1,49,31,46,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PLAYER2,51,87,48,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,18,53,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,19,110,100,14,ES_AUTOHSCROLL
+END
+
+IDD_HISTORY DIALOGEX 0, 0, 197, 312
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "历史步骤"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_HISTORY,7,7,183,298,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL
+END
+
+IDD_NETWORK DIALOGEX 0, 0, 253, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网络"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "保存并关闭",IDOK,67,250,50,17
+    LTEXT           "玩家列表：",IDC_STATIC,11,74,41,8
+    LTEXT           "日志：",IDC_STATIC,10,164,25,8
+    EDITTEXT        IDC_EDIT_LOG,7,178,239,65,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "我的名字：",IDC_STATIC,10,9,41,9
+    EDITTEXT        IDC_EDIT_Name,60,6,72,14,ES_AUTOHSCROLL
+    LTEXT           "服务器地址：",IDC_STATIC,10,27,65,9
+    LTEXT           "服务器端口：",IDC_STATIC,10,44,65,9
+    EDITTEXT        IDC_EDIT_PORT,60,42,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,60,25,100,13
+    DEFPUSHBUTTON   "断开",IDC_BTN_DISCONNECT,201,43,34,14
+    DEFPUSHBUTTON   "邀请对战",IDC_BTN_CHALLENGE,124,144,51,16
+    DEFPUSHBUTTON   "连接",IDC_BTN_CONNECT,202,25,34,14
+    CTEXT           "ID =",IDC_STATIC_ID,199,13,41,9
+    LISTBOX         IDC_LIST_PLAYER_CAN_CHALLENGE,7,85,239,57,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "已选择：",IDC_STATIC,11,147,33,9
+    DEFPUSHBUTTON   "取消对战",IDC_BTN_CANCEL_CHALLENGE,136,56,51,16
+    LTEXT           "对方名字：",IDC_STATIC,11,59,43,8
+    EDITTEXT        IDC_EDIT_OPPONENT,60,57,70,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHOOSED_PLAYER,46,146,70,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "关闭",IDCANCEL,157,250,37,17
+    LTEXT           "最多20字符",IDC_STATIC,141,10,45,9
+END
+
+IDD_TIP DIALOGEX 0, 0, 183, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BTN_OK1,35,69,50,14
+    PUSHBUTTON      "Cancel",IDC_BTN_CANCEL1,95,69,50,14
+    CTEXT           "Static",IDC_STATIC_MSG,16,15,152,40,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDC_BTN_OK2,71,69,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,0,0
+ PRODUCTVERSION 3,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "应用程序"
+            VALUE "FileVersion", "3.3.0.0"
+            VALUE "InternalName", "Bistu Amazons II"
+            VALUE "LegalCopyright", "Designed By Ch"
+            VALUE "OriginalFilename", "Bistu_Amazons_II_Alter.exe"
+            VALUE "ProductName", "北信科亚马逊II"
+            VALUE "ProductVersion", "3.3.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 219
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_HISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SETTINGS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Amazons\nSaber\nAmazon\nAmazon Files(*.amz)\n.amz\nAmazons.Document\nAmazon Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "北信科亚马逊II"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE
+BEGIN
+    ID_UNDO                 "后退两步\n后退两步"
+    ID_REDO                 "前进两步\n前进两步"
+    ID_SETTINGS             "游戏戏置\n游戏设置"
+    ID_HISTORY              "查看历史步骤\n历史步骤"
+    ID_NEW_GAME             "开始新的游戏\n新游戏"
+END
+
+STRINGTABLE
+BEGIN
+    ID_BUTTON32787          "开始新的游戏\n新游戏"
+    ID_GAME_START           "开始游戏\n开始游戏"
+    ID_REDO1                "前进一步\n前进一步"
+    ID_UNDO2                "后退两步\n后退两步"
+    ID_FORWARD_TWO          "前进两步\n前进两步"
+    ID_UNDO1                "后退一步\n后退一步"
+    ID_PASS                 "该轮不着子，跳过\n跳过"
+    ID_BACKWARD_TWO         "后退两步\n后退两步"
+    ID_BACKWARD_ONE         "后退一步\n后退一步"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FORWARD_ONE          "前进一步\n前进一步"
+    ID_SHOW_HISTORY_DLG     "显示历史步骤\n历史"
+    ID_GAMESUSPEND          "暂停游戏\n暂停游戏"
+    ID_MARK                 "开关标记功能\n标记"
+    ID_COPY_MOVES_TO_CLIPBOARD "复制着法至剪切板\n复制着法至剪切板"
+    ID_SUGGEST_A_MOVE       "电脑荐子\n电脑荐子"
+    ID_BACK_TO_START        "退回到开始\n退回到开始"
+    ID_FORWARD_TO_END       "前进到结束\n前进到结束"
+    ID_STOP_COMPUTING       "停止电脑计算\n停止"
+    ID_NETWORK              "网络设置\n网络设置"
+    ID_NET                  "网络设置\n网络设置"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Amazons.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

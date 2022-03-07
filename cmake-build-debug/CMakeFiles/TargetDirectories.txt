@@ -1,0 +1,3 @@
+C:/Users/menglin9128/Desktop/AmazonChess_Traditional_Archive-master/cmake-build-debug/CMakeFiles/AmazonChess_Traditional_Archive_master.dir
+C:/Users/menglin9128/Desktop/AmazonChess_Traditional_Archive-master/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/menglin9128/Desktop/AmazonChess_Traditional_Archive-master/cmake-build-debug/CMakeFiles/rebuild_cache.dir
